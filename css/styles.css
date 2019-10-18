@@ -1,0 +1,342 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.demo-card-wide>.mdl-card__title {
+    color: #fff;
+    height: 250px;
+    background: url('../images/chat-bot-blue.png') center / cover;
+}
+
+.demo-card-wide>.mdl-card__menu {
+    color: #fff;
+}
+
+.demo-ribbon {
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(255, 193, 7);
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.demo-main {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.demo-header .mdl-layout__header-row {
+    padding-left: 40px;
+}
+
+.demo-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+
+.demo-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+
+.demo-layout.is-small-screen .demo-content {
+    padding: 40px 28px;
+}
+
+.demo-footer {
+    padding-left: 40px;
+}
+
+.demo-footer .mdl-mini-footer--link-list a {
+    font-size: 13px;
+}
+
+
+h1,
+h2,
+h3 {
+    margin: 0
+}
+
+.md-display-3 {
+    font-size: 64px;
+    font-weight: 300
+}
+
+.md-display-2 {
+    font-size: 48px;
+    font-weight: 400
+}
+
+.md-display-1 {
+    font-size: 36px;
+    font-weight: 500
+}
+
+.md-headline {
+    font-size: 24px;
+    font-weight: 500
+}
+
+.md-body {
+    font-size: 16px;
+    font-weight: 400
+}
+
+.md-caption {
+    font-size: 14px;
+    font-weight: 300
+}
+
+.md-display-3,
+.md-display-2,
+.md-display-1,
+.md-headline,
+.md-caption {
+    line-height: 1.2em
+}
+
+.md-body {
+    line-height: 1.5em
+}
+
+@media screen and (max-width:768px) {
+    .demo-content h3 {
+        font-size: 28px
+    }
+
+    .md-display-2 {
+        font-size: 28px
+    }
+
+    .md-display-1 {
+        font-size: 24px
+    }
+
+    .md-headline {
+        font-size: 18px
+    }
+
+    .md-body {
+        font-size: 14px
+    }
+}
+
+.md-list {
+    box-sizing: border-box;
+    list-style: none;
+    padding-left: 1.4em
+}
+
+.md-list li {
+    margin-bottom: 1.2em
+}
+
+.md-list li:last-child {
+    margin-bottom: 0
+}
+
+ul.md-list li {
+    position: relative
+}
+
+ul.md-list li:before {
+    content: "\002022";
+    font-size: 1em;
+    position: absolute;
+    left: -27px;
+    top: 0
+}
+
+.md-list .md-li-title {
+    font-weight: 500
+}
+
+
+.section-grey,
+.section-orange,
+.section-intro,
+.section-grey+.section,
+.section-orange+.section,
+.section-intro+.section {
+    border-top: 0
+}
+
+.section-grey {
+    background: #f8f8f8
+}
+
+.section-orange {
+    background: #e65100;
+    color: #fff
+}
+
+.section-intro {
+    background-position: center;
+    background-size: cover
+}
+
+.section-intro .section-inner {
+    padding: 40px
+}
+
+.section-intro .md-display-2 {
+    color: #fff;
+    margin: 0;
+    text-align: center
+}
+
+.section-inner {
+    box-sizing: border-box;
+    margin: auto;
+    max-width: 960px;
+    padding: 60px 40px;
+    text-align: center;
+    width: 100%
+}
+
+.section-inner.pad-30 {
+    padding: 30px
+}
+
+.section-inner.pad-40 {
+    padding: 40px
+}
+
+.section .md-display-1 {
+    margin: 0 auto .5em
+}
+
+.section-img {
+    height: auto;
+    margin: 0 auto 40px;
+    max-width: 280px;
+    width: 100%
+}
+
+@media screen and (max-width:768px) {
+    .section-inner {
+        padding: 40px 20px
+    }
+
+    .section-intro .section-inner {
+        padding: 40px 20px
+    }
+
+    .section-desc {
+        text-align: left
+    }
+
+    .section-inner-mobile-fullbleed {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .section-inner-mobile-fullbleed>.md-display-1 {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+}
+
+.border-gradient-top:before,
+.border-gradient-bottom:after {
+    background: -webkit-linear-gradient(to right, #fad961, #f76b1c);
+    background: linear-gradient(to right, #fad961, #f76b1c);
+    content: " ";
+    display: block;
+    height: 4px;
+    left: 0;
+    position: absolute;
+    right: 0
+}
+
+.border-gradient-top:before {
+    top: 0
+}
+
+.border-gradient-bottom:after {
+    bottom: 0
+}
+
+.section-next-page .section-inner {
+    padding: 45px 15px;
+    text-align: center
+}
+
+.section-next-page .md-headline {
+    margin-bottom: 1.3em
+}
+
+.section-next-page .btn-wrap {
+    margin: 0 auto;
+    max-width: 200px
+}
+
+.section-list {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 0;
+    padding-left: 2em;
+    text-align: left
+}
+
+.section-list li {
+    position: relative
+}
+
+.section-list .li-num {
+    background: #9e9e9e;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    height: 30px;
+    left: -54px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 30px
+}
+
+@media screen and (max-width:768px) {
+    .section-list {
+        padding-left: 0;
+        text-align: center
+    }
+
+    .section-list .md-body {
+        margin-top: 1em
+    }
+
+    .section-list .md-headline {
+        font-size: 16px;
+        margin-top: 1em
+    }
+
+    .section-list .li-num {
+        height: 45px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 45px;
+        position: static;
+        width: 45px
+    }
+}
