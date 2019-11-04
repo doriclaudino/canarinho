@@ -1,4 +1,4 @@
-fetch('https://zapbot-6df14.firebaseio.com/public_chat_data.json').then(async res => {
+fetch('https://us-central1-zapbot-6df14.cloudfunctions.net/publicChatData').then(async res => {
     try {
         let json = await res.json()
         let states = json && Object.keys(json)
@@ -14,14 +14,14 @@ fetch('https://zapbot-6df14.firebaseio.com/public_chat_data.json').then(async re
             const stateName = states[index];
             const defaultImage = `../images/default_chat_image.png`
             const {
-                imagem,
+                image,
                 link,
                 name
             } = json[stateName]
             let innerHTML = `
               <span class="mdl-list__item-primary-content">
                 <img class="mdl-list__item-avatar mdl-list__item-avatar material-icons"
-                  src="${imagem}"
+                  src="${image}"
                   onerror="this.onerror=null; this.src='${defaultImage}'"
                   alt="${name}_imagem">
                 <a href="${link}" target="_blank" class="mdl-badge mdl-typography--text-capitalize">
