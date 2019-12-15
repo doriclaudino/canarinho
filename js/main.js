@@ -12,7 +12,7 @@ fetch('https://us-central1-zapbot-6df14.cloudfunctions.net/publicChatData').then
         //<li class="mdl-list__item">
         for (let index = 0; index < states.length; index++) {
             const stateName = states[index];
-            const defaultImage = `../images/fixed-group-icon-1.png`
+            const defaultImage = `./images/fixed-group-icon-1.png`
             const {
                 image,
                 link,
@@ -21,7 +21,7 @@ fetch('https://us-central1-zapbot-6df14.cloudfunctions.net/publicChatData').then
             let innerHTML = `
               <span class="mdl-list__item-primary-content">
                 <img class="mdl-list__item-avatar mdl-list__item-avatar material-icons"
-                  src="${defaultImage}"
+                  src="${image}"
                   onerror="this.onerror=null; this.src='${defaultImage}'"
                   alt="${name}_imagem">
                 <a href="${link}" target="_blank" class="mdl-badge mdl-typography--text-capitalize">
